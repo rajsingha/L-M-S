@@ -34,6 +34,7 @@ public class DashboardActvity extends AppCompatActivity implements NavigationVie
         
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        navigationView.bringToFront();
         toolbar.setNavigationIcon(R.drawable.ic_menu_);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,
