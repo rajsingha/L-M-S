@@ -1,6 +1,7 @@
 package com.lms.android.app.DrawerModel;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -49,6 +50,12 @@ public class DashboardActvity extends AppCompatActivity implements NavigationVie
         navigationView.setNavigationItemSelectedListener(this);
         customLoadingDialog.startLoadingDialog();
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                customLoadingDialog.dismissLoadingDialog();
+            }
+        },10000);
 
 
 
@@ -61,6 +68,7 @@ public class DashboardActvity extends AppCompatActivity implements NavigationVie
 
     @Override
     public void onBackPressed() {
+
         if (drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START);
         }else {
