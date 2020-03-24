@@ -12,15 +12,17 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+
+import com.lms.android.app.Models.CustomLoadingDialog;
 import com.lms.android.app.R;
+import com.lms.android.app.databinding.CustomGearLoadingDialogBoxBinding;
 
 public class DashboardActvity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-
-
+    CustomLoadingDialog customLoadingDialog;
 
 
     @Override
@@ -31,7 +33,10 @@ public class DashboardActvity extends AppCompatActivity implements NavigationVie
         drawerLayout =findViewById(R.id.dashboard_drawerLayout);
         navigationView = findViewById(R.id.nav_view);
         toolbar= findViewById(R.id.dashboard_toolbar);
-        
+
+        customLoadingDialog = new CustomLoadingDialog(DashboardActvity.this);
+
+
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         navigationView.bringToFront();
@@ -42,6 +47,12 @@ public class DashboardActvity extends AppCompatActivity implements NavigationVie
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        customLoadingDialog.startLoadingDialog();
+
+
+
+
+
 
 
         
