@@ -1,4 +1,4 @@
-package Activities;
+package com.lms.android.app.Activities;
 
 import android.os.Bundle;
 
