@@ -157,8 +157,9 @@
                                             android:layout_marginTop="5dp"
                                             android:fontFamily="@font/comic_sans_ms3"
                                             android:text="Upload Assignment"
+                                            android:textColor="#6f6f6f"
                                             android:textAlignment="center"
-                                            android:textSize="10sp"
+                                            android:textSize="9sp"
                                             android:textStyle="bold" />
 
                                     </LinearLayout>
@@ -199,8 +200,9 @@
                                             android:layout_marginTop="5dp"
                                             android:fontFamily="@font/comic_sans_ms3"
                                             android:text="Share Doubt"
+                                            android:textColor="#6f6f6f"
                                             android:textAlignment="center"
-                                            android:textSize="10sp"
+                                            android:textSize="9sp"
                                             android:textStyle="bold" />
 
                                     </LinearLayout>
@@ -238,8 +240,9 @@
                                             android:layout_marginTop="5dp"
                                             android:fontFamily="@font/comic_sans_ms3"
                                             android:text="Connect Mentor"
+                                            android:textColor="#6f6f6f"
                                             android:textAlignment="center"
-                                            android:textSize="10sp"
+                                            android:textSize="9sp"
                                             android:textStyle="bold" />
 
                                     </LinearLayout>
