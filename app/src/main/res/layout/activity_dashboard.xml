@@ -16,7 +16,7 @@
         android:layout_height="match_parent"
         android:id="@+id/dashboard_drawerLayout"
         android:fitsSystemWindows="true"
-        tools:openDrawer="start">
+        >
 
 
 
@@ -32,7 +32,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:background="@drawable/custom_blue_curved_bg"
+            android:background="@drawable/cutom_dashboard_bg"
             android:layout_height="match_parent">
 
 
@@ -59,7 +59,7 @@
                         android:layout_width="wrap_content"
                         app:layout_scrollFlags="scroll|enterAlways"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="30dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:navigationIcon="@drawable/ic_menu_" />
@@ -68,7 +68,7 @@
                         android:id="@+id/circleImageView"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="30dp"
                         android:layout_marginEnd="28dp"
                         android:src="@drawable/woman"
                         app:civ_border_color="#fff"
@@ -113,17 +113,160 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <GridLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alignmentMode="alignMargins"
+                                android:columnCount="3"
+                                android:columnOrderPreserved="false"
+                                android:rowCount="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_height="70dp"
+                                    android:layout_width="90dp"
+                                    android:layout_columnWeight="3"
+                                    android:layout_rowWeight="1"
+                                    android:clickable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:focusable="true"
+                                    app:cardElevation="6dp"
+                                    app:cardCornerRadius="12dp"
+                                    android:layout_margin="12dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="80dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_gravity="center"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/btn_upload_assignment"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:fontFamily="@font/comic_sans_ms3"
+                                            android:text="Upload Assignment"
+                                            android:textAlignment="center"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_height="70dp"
+                                    android:layout_width="90dp"
+                                    android:layout_columnWeight="3"
+                                    android:layout_rowWeight="1"
+                                    android:clickable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:focusable="true"
+                                    app:cardElevation="6dp"
+                                    app:cardCornerRadius="12dp"
+                                    android:layout_margin="12dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="80dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_gravity="center"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/btn_share_doubts"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:fontFamily="@font/comic_sans_ms3"
+                                            android:text="Share Doubt"
+                                            android:textAlignment="center"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_height="70dp"
+                                    android:layout_width="90dp"
+                                    android:layout_columnWeight="3"
+                                    android:layout_rowWeight="1"
+                                    android:clickable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:focusable="true"
+                                    app:cardElevation="6dp"
+                                    app:cardCornerRadius="12dp"
+                                    android:layout_margin="12dp">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:layout_width="80dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_gravity="center"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/btn_connect_mentor"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="5dp"
+                                            android:fontFamily="@font/comic_sans_ms3"
+                                            android:text="Connect Mentor"
+                                            android:textAlignment="center"
+                                            android:textSize="10sp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+                            </GridLayout>
+                        </LinearLayout>
+
+
+
+
                         <GridLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:columnCount="2"
+                            android:layout_marginBottom="50dp"
                             android:rowCount="3"
                             android:alignmentMode="alignMargins"
                             android:columnOrderPreserved="false">
 
                             <androidx.cardview.widget.CardView
                                 android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_columnWeight="1"
                                 android:layout_rowWeight="1"
                                 android:clickable="true"
@@ -136,26 +279,28 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:padding="16dp"
+                                    android:padding="12dp"
                                     android:gravity="center">
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
+                                        android:src="@drawable/btn_class_notes"/>
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/comic_sans_ms3"
+                                        android:text="Class Notes"
                                         android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
+                                        android:textStyle="bold" />
 
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_columnWeight="1"
                                 android:clickable="true"
                                 android:foreground="?android:attr/selectableItemBackground"
@@ -168,27 +313,27 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:padding="16dp"
+                                    android:padding="12dp"
                                     android:gravity="center">
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
+                                        android:src="@drawable/btn_upload_notes"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/comic_sans_ms3"
+                                        android:text="Upload Notes"
                                         android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
-
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
                                 android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_columnWeight="1"
                                 android:layout_rowWeight="1"
                                 android:clickable="true"
@@ -201,26 +346,27 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:padding="16dp"
+                                    android:padding="12dp"
                                     android:gravity="center">
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
+                                        android:src="@drawable/btn_group_chat"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/comic_sans_ms3"
+                                        android:text="Group Chat"
                                         android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
 
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_columnWeight="1"
                                 android:clickable="true"
                                 android:foreground="?android:attr/selectableItemBackground"
@@ -233,26 +379,27 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:padding="16dp"
+                                    android:padding="12dp"
                                     android:gravity="center">
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
+                                        android:src="@drawable/btn_share_ideas"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/comic_sans_ms3"
+                                        android:text="Share Ideas"
                                         android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
 
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_columnWeight="1"
                                 android:clickable="true"
                                 android:foreground="?android:attr/selectableItemBackground"
@@ -265,26 +412,27 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:padding="16dp"
+                                    android:padding="12dp"
                                     android:gravity="center">
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
+                                        android:src="@drawable/btn_video_conference"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/comic_sans_ms3"
+                                        android:text="Video Conference"
                                         android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
 
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
                             <androidx.cardview.widget.CardView
                                 android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
+                                android:layout_width="120dp"
                                 android:layout_columnWeight="1"
                                 android:layout_rowWeight="1"
                                 android:clickable="true"
@@ -297,152 +445,24 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:padding="16dp"
+                                    android:padding="12dp"
                                     android:gravity="center">
                                     <ImageView
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
+                                        android:src="@drawable/btn_todo_list"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/comic_sans_ms3"
+                                        android:text="TODO List"
                                         android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
 
+                                        android:textStyle="bold" />
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
-                            <androidx.cardview.widget.CardView
-                                android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
-                                android:layout_columnWeight="1"
-                                android:layout_rowWeight="1"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:focusable="true"
-                                app:cardElevation="6dp"
-                                app:cardCornerRadius="12dp"
-                                android:layout_margin="12dp">
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:padding="16dp"
-                                    android:gravity="center">
-                                    <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
-                                        android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                            <androidx.cardview.widget.CardView
-                                android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
-                                android:layout_columnWeight="1"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:focusable="true"
-                                android:layout_rowWeight="1"
-                                app:cardElevation="6dp"
-                                app:cardCornerRadius="12dp"
-                                android:layout_margin="12dp">
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:padding="16dp"
-                                    android:gravity="center">
-                                    <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
-                                        android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                            <androidx.cardview.widget.CardView
-                                android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
-                                android:layout_columnWeight="1"
-                                android:layout_rowWeight="1"
-                                app:cardElevation="6dp"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:focusable="true"
-                                app:cardCornerRadius="12dp"
-                                android:layout_margin="12dp">
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:padding="16dp"
-                                    android:gravity="center">
-                                    <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
-                                        android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-                            <androidx.cardview.widget.CardView
-                                android:layout_height="wrap_content"
-                                android:layout_width="wrap_content"
-                                android:layout_columnWeight="1"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:focusable="true"
-                                android:layout_rowWeight="1"
-                                app:cardElevation="6dp"
-                                app:cardCornerRadius="12dp"
-                                android:layout_margin="12dp">
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:padding="16dp"
-                                    android:gravity="center">
-                                    <ImageView
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:src="@drawable/woman"/>
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textSize="18sp"
-                                        android:text="Chutiya"
-                                        android:textColor="#6f6f6f"
-                                        android:layout_marginTop="10dp"/>
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-
                         </GridLayout>
 
 

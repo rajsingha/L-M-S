@@ -6,12 +6,18 @@
         <item android:title="Profile"
             android:icon="@drawable/ic_profile"
             android:id="@+id/profile"/>
-        <item android:title="Class"
-            android:icon="@drawable/ic_class"
-            android:id="@+id/clase"/>
+        <item android:title="Need Help"
+            android:icon="@drawable/ic_live_help"
+            android:id="@+id/need_help"/>
         <item android:title="Feedback"
             android:icon="@drawable/ic_feedback"
             android:id="@+id/feedback"/>
+        <item android:title="Settings"
+            android:icon="@drawable/ic_settings"
+            android:id="@+id/settings"/>
+        <item android:title="Log Out"
+            android:icon="@drawable/ic_logout"
+            android:id="@+id/log_out"/>
     </group>
 
 
