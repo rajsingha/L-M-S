@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardElevation="8dp"
+    android:outlineAmbientShadowColor="#554C4C"
+    android:layout_height="200dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lower"
+        app:riv_corner_radius_top_left="24dp"
+        app:riv_corner_radius_top_right="24dp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/holo_red_light"
+            android:padding="8dp"
+            android:text="Cobra"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            />
+
+
+
+</androidx.cardview.widget.CardView>

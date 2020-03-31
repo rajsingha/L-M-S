@@ -276,6 +276,7 @@
                                 android:foreground="?android:attr/selectableItemBackground"
                                 android:focusable="true"
                                 app:cardElevation="6dp"
+                                android:id="@+id/class_notes_cardView"
                                 app:cardCornerRadius="12dp"
                                 android:layout_margin="12dp">
                                 <LinearLayout
@@ -285,6 +286,7 @@
                                     android:padding="12dp"
                                     android:gravity="center">
                                     <ImageView
+
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
                                         android:src="@drawable/btn_class_notes"/>
